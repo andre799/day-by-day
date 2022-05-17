@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="author" content="Hari Ram" />
+  <title>DayByDay | Organizador de Tarefas</title>
+  <meta name="description" content="Organizador de Tarefas" />
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="./css/styles.css" />
+  <link rel="preload" href="./assets/images/icon-check.svg" as="image" type="image/svg+xml" crossorigin="anonymous">
+</head>
+
+<body>
+  <header class="card">
+    <h1>Minhas Tarefas</h1>
+    <button id="theme-switcher">
+      <img src="./assets/images/icon-sun.svg" alt="Change color theme" />
+    </button>
+  </header>
+  <main>
+    <div class="card add">
+      <div class="cb-container">
+        <button id="add-btn">+</button>
+      </div>
+      <div class="txt-container">
+        <label for="addt">Criar tarefa</label>
+        <form id="addtform">
+          <input type="text" class="txt-input" placeholder="Criar nova tarefa..." spellcheck="false" autocomplete="off"
+            id="addt" />
+        </form>
+      </div>
+    </div>
+    <ul class="todos"></ul>
+    <div class="card stat">
+      <p class="corner"><span id="items-left">0</span> tarefas restantes</p>
+      <div class="filter">
+        <button id="all" class="on">&nbsp;Todas&nbsp;</button>
+        <button id="active">&nbsp;Abertas&nbsp;</button>
+        <button id="completed">&nbsp;Completas&nbsp;</button>
+      </div>
+      <div class="corner">
+        <button id="clear-completed">Limpar Completas</button>
+      </div>
+    </div>
+  </main>
+  <footer>
+    <p>Arraste e solte para reordenar a lista</p>
+    <br>
+    <p>Acesse os links abaixo para conferir dicas que te ajudaram em sua rotina:</p>
+    <br>
+    <table class="tips">
+      <tr>
+        <th><a href="./tips/dica_1.html" target="_blank">- Dicas 1</a></th>
+      </tr>
+      <tr>
+        <th><a href="./tips/dica_2.html" target="_blank">- Dicas 2</a></th>
+      </tr>
+      <tr>
+        <th><a href="./tips/dica_3.html" target="_blank">- Dicas 3</a></th>
+      </tr>
+    </table>
+  </footer>
+  <script src="./js/scripts.js"></script>
+</body>
+
+</html>
